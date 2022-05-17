@@ -71,6 +71,8 @@ document.getElementById('book-form').addEventListener('submit', e => {
         ui.showAlert('Please, fill all fields!', 'error')
     } else {
         ui.addBookToList(book)
+        // Show alert
+        ui.showAlert('Book added!', 'success')
         ui.clearFields()
     }
 
